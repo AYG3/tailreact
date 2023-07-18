@@ -12,19 +12,7 @@
     text-decoration:none;
 }
 
-:root{
-    --color-bg: rgba(193, 191, 191, 0.361);
-    --color-comp: rgb(11, 133, 174);
-    --color-text: black;
-    --color-text2:rgb(211, 211, 211);   /* light gray */
-    --color-text3:rgb(255, 255, 204);  /* Light yellow*/
-    --color-text4:rgb(224, 255, 255); /* Light cyan */
-    --color-text5:rgb(255, 182, 193); /* Light Pink  */
 
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
-}
 ::-webkit-scrollbar{
     display: none;
 }
@@ -46,13 +34,9 @@ body{
 
 
 
-/* .container{
-    width: var()
-} */
 
 .btn-black{
     background: #121826;
-    /* background: #1a202c; */
     padding: 1.5rem;
     color: white;
     border-radius: .5rem;
@@ -67,24 +51,4 @@ body{
 
 #header, #about, #services, #experience, #contact{
     margin-top: 9rem;
-}
-
-
-
-/* ------ GENERAL STYLES ----------*/
-/* .container{
-    width: var(--container-width-lg);
-    margin: 0 auto;
-} */
-
-@media screen and (max-width: 1024px){
-    /* .container{
-        width: var(--container-width-md);
-    } */
-}
-
-@media screen and (max-width: 600px){
-    /* .container{
-        width: var(--container-widht-sm);
-    } */
 }
