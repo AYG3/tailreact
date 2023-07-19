@@ -45,17 +45,17 @@ const Testimonials = () => {
     
     
     return (
-        <div id='testimonials' className='flex'>
+        <div id='testimonials' className='flex flex-col user-select-none '>
             <div className='flex flex-col items-center'>
                 <h3>See some reports</h3>
-                <h1 className='text-semibold text-blue-600'> Reviews</h1>
+                <h1 className='text-semibold text-blue-600 text-4xl'> Reviews</h1>
             </div>
-            <Swiper className=' w-2/3 lg:w-[48rem] '
+            <Swiper className=' w-2/3 pb-12 lg:w-[48rem] 2xl:w-[60rem]'
             modules={[Navigation, Pagination]} spaceBetween={60} slidesPerView={1} pagination={{ clickable: true }} onSwiper={(swiper) => console.log(swiper)} onSlideChange={() => console.log('slide change')}>
             {
                 data.map(({name, picture, review}, index) => {
                     return(
-                        <SwiperSlide key={index} className='flex flex-col items-center bg-gray-900 py-11 rounded-xl w-2/5 lg:bg-red-600'>
+                        <SwiperSlide key={index} className='flex flex-col items-center bg-gray-900 py-11 rounded-xl w-2/5 mt-10 '>
                             <div className='flex flex-col items-center'>
                                 <img src={picture} className='rounded-xl h-16 object-cover object-center' alt="" />
                                 <h3 className='text-blue-600 mt-2'>{name}</h3>
