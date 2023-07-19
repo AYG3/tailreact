@@ -72,7 +72,7 @@ const Portfolio = () => {
                         
                             <div className=' flex items-center justify-start space-x-10 mt-8 mb-3 text-white group-hover:text-gray-900 2xl:ml-5'>
                                 <button href={github} className='bg-transparent ring-1 ring-blue-600 px-8 py-4 rounded-xl font-semibold transition duration-500 group-hover:bg-gray-900 group-hover:text-gray-200 group-hover:ring-0'>Github</button>
-                                <button href={demo} className='bg-blue-600 px-10 py-4 rounded-xl font-semibold transition duration-500 text-gray-900 group-hover:bg-transparent group-hover:ring-1 group-hover:ring-gray-900'>Live demo</button>
+                                <button href={demo} className='bg-blue-600 px-8 py-4 rounded-xl font-semibold transition duration-500 text-gray-900 group-hover:bg-transparent group-hover:ring-1 group-hover:ring-gray-900'>Live demo</button>
                             </div>
                         </div>
                     )
