@@ -49,6 +49,6 @@ body{
     border-radius: .8rem;
 }
 
-#header, #about, #services, #experience, #contact{
+#header, #about, #services, #experience, #contact, #footer, #testimonials{
     margin-top: 9rem;
 }
