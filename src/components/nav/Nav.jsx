@@ -12,7 +12,7 @@ const Nav = () => {
     const [active, setActive] = useState('#header')
 
     return( 
-        <div className="fixed bottom-12 inset-x-0 mx-auto w-max flex justify-center bg-gray-900 p-3 sm:space-x-2 rounded-xl text-blue-600 space-x-0 sm:space-x-2">
+        <div className="fixed bottom-12 inset-x-0 mx-auto w-max flex justify-center bg-gray-900 p-3 sm:space-x-2 rounded-xl text-blue-600 space-x-0 sm:space-x-2 z-[999]">
 
             <a href="#header" onClick={() =>setActive('#header')} className={`sm:p-2 p-1 rounded-lg font-bold text-2xl ${active === '#header' ? 'active' : ''}`}> <AiTwotoneHome /></a>
             <a href="#about" onClick={() =>setActive('#about')} className= {`sm:p-2 p-1 rounded-lg font-bold text-2xl ${active === '#about' ? 'active' : ''} `}> <FaUser /></a>
