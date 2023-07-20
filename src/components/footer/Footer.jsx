@@ -25,7 +25,7 @@ const Footer = () =>{
                 <a href="https://www.instagram.com/ayoku_g3/" target='_blank' rel='noreferrer'><AiFillInstagram /></a>
                 <a href="https://api.whatsapp.com/send?phone=+2349150710365" target='_blank' rel='noreferrer'><IoLogoWhatsapp /></a>
             </div>
-            <p className='mt-12 md:mt-8'>&copy; AYG3. All Rights Reserved</p>
+            <p className='mt-12 text-sm md:mt-8'>&copy; AYG3. All rights reserved</p>
         </div>
     )
 }
