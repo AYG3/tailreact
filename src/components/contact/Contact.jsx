@@ -2,10 +2,21 @@ import React from 'react'
 import { BiLogoGmail } from 'react-icons/bi'
 import { AiFillInstagram } from 'react-icons/ai'
 import { IoLogoWhatsapp } from 'react-icons/io'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
-import './contact.css'
-
+ 
 const Contact = () =>{
+    const form = useRef();
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_i6o34uq', 'template_oko0byl', form.current, 'SrQVUDVcjiwrFoA3x')
+
+    e.target.reset()
+    };
+    
+    
     return(
         <div id='contact' className='container mx-auto flex flex-col items-center 2xl:px-40 xl:px-32 md:px-18'> 
             <div className='flex flex-col items-center'>
@@ -35,11 +46,11 @@ const Contact = () =>{
                     </div>
                 </div>
                 <div className=' lg:col-span-2 '>
-                    <form action="" className='flex flex-col space-y-24 items-center w-72 text-gray-300 text-sm md:space-y-18 md:w-auto md:items-stretch'>
+                    <form ref={form} onSubmit={sendEmail} className='flex flex-col space-y-24 items-center w-72 text-gray-300 text-sm md:space-y-18 md:w-auto md:items-stretch'>
                         <input type="text" name='name' className='mt-16 ring-1 ring-blue-600 bg-transparent rounded-lg h-14 p-3 outline-none md:mt-8' placeholder='Your name' required/>
                         <input type="email" name='email' className='ring-1 ring-blue-600 bg-transparent rounded-lg h-14 p-3 outline-none' placeholder='Your email' required/>
                         <textarea name=""className='ring-1 ring-blue-600 bg-transparent rounded-lg p-3 resize-none outline-none' placeholder='Your message'  id="" rows={7}  ></textarea>
-                        <button className='bg-blue-600 w-28 py-4 rounded-lg font-bold hover:bg-transparent hover:ring-1 duration-300'>Send Message</button>
+                        <button type="submit" className='bg-blue-600 w-28 py-4 rounded-lg font-bold hover:bg-transparent hover:ring-1 duration-300'>Send Message</button>
                     </form>
                 </div>
 
