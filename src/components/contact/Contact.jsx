@@ -7,13 +7,13 @@ import './contact.css'
 
 const Contact = () =>{
     return(
-        <div id='contact' className='container mx-auto flex flex-col items-center '> 
+        <div id='contact' className='container mx-auto flex flex-col items-center 2xl:px-40 xl:px-32 md:px-18'> 
             <div className='flex flex-col items-center'>
                 <h3>Get in touch</h3>
                 <h1 className='text-4xl text-blue-600 font-semibold'>Contact</h1>
             </div>
 
-            <div className='flex flex-col items-center md:container md:mx-auto bg-gray-900 rounded-xl pr-9 py-10  md:grid md:items-start md:grid-flow-col md:grid-cols-2 lg:grid-cols-3 xl:mx-80 '>
+            <div className='flex flex-col items-center md:container md:mx-auto bg-gray-900 rounded-xl pr-9 py-10  md:grid md:items-start md:grid-flow-col md:grid-cols-2 lg:grid-cols-3'>
                 <div className='flex flex-col items-start pl-8 w-64 lg:cols-span-1'>
                     <div className=' flex flex-col items-center ring-1 ring-blue-600 px-7 py-8 my-5 rounded-xl  space-y-3 text-blue-600 sm:w-60 xl:w-72'>
                         <BiLogoGmail className='text-blue-600 font-bold' />
@@ -35,7 +35,7 @@ const Contact = () =>{
                     </div>
                 </div>
                 <div className=' lg:col-span-2 '>
-                    <form action="" className='flex flex-col space-y-24 items-center w-60 text-gray-300 text-sm md:space-y-18 md:w-auto sm:items-stretch'>
+                    <form action="" className='flex flex-col space-y-24 items-center w-72 text-gray-300 text-sm md:space-y-18 md:w-auto md:items-stretch'>
                         <input type="text" name='name' className='mt-16 ring-1 ring-blue-600 bg-transparent rounded-lg h-14 p-3 outline-none md:mt-8' placeholder='Your name' required/>
                         <input type="email" name='email' className='ring-1 ring-blue-600 bg-transparent rounded-lg h-14 p-3 outline-none' placeholder='Your email' required/>
                         <textarea name=""className='ring-1 ring-blue-600 bg-transparent rounded-lg p-3 resize-none outline-none' placeholder='Your message'  id="" rows={7}  ></textarea>
