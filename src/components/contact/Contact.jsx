@@ -26,19 +26,19 @@ const Contact = () =>{
 
             <div className='flex flex-col items-center md:container md:mx-auto bg-gray-900 rounded-xl pr-9 py-10  md:grid md:items-start md:grid-flow-col md:grid-cols-2 lg:grid-cols-3'>
                 <div className='flex flex-col items-start pl-8 w-64 lg:cols-span-1'>
-                    <div className=' flex flex-col items-center ring-1 ring-blue-600 px-7 py-8 my-5 rounded-xl  space-y-3 text-blue-600 sm:w-60 xl:w-72'>
+                    <div className=' flex flex-col items-center ring-1 ring-blue-600 px-7 py-8 my-5 rounded-xl space-y-3 text-blue-600 sm:w-60 xl:w-72'>
                         <BiLogoGmail className='text-blue-600 font-bold' />
                         <h1 className='text-lg text-semibold text-white'>Gmail</h1>
                         <h3 className='font-bold text-gray-500'>gilbertayoku3@gmail.com</h3>
                         <a href="mailto:gilbertayoku3@gmail.com" target='_blank' rel='noreferrer' className='hover:text-gray-300 duration-500'>Send me a message</a>
                     </div>
-                    <div className=' flex flex-col items-center ring-1 ring-blue-600 px-12 py-8 my-5 rounded-xl space-y-3 text-blue-600 sm:w-60 xl:w-72'>
+                    <div className=' flex flex-col items-center ring-1 ring-blue-600 px-7 py-8 my-5 rounded-xl space-y-3 text-blue-600 sm:w-60 xl:w-72'>
                         <AiFillInstagram className='text-blue-600 font-bold' />
                         <h1 className='text-lg text-semibold text-white'>Instagram</h1>
                         <h3 className='font-bold text-gray-500'>ayoku_g3</h3>
                         <a href="https://www.instagram.com/ayoku_g3/" target='_blank' rel='noreferrer' className='hover:text-gray-300 duration-500 '>Send me a message</a>
                     </div>
-                    <div className=' flex flex-col items-center ring-1 ring-blue-600 px-12 py-8 my-5 rounded-xl space-y-3 text-blue-600 sm:w-60 xl:w-72'>
+                    <div className=' flex flex-col items-center ring-1 ring-blue-600 px-7 py-8 my-5 rounded-xl space-y-3 text-blue-600 sm:w-60 xl:w-72'>
                         <IoLogoWhatsapp className='text-blue-600 font-bold' />
                         <h1 className='text-lg text-semibold text-white'>Whatsapp</h1>
                         <h3 className='font-bold text-gray-500'>+234 91 507 103 65</h3>
