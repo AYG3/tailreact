@@ -6,7 +6,7 @@ import { FaFolderPlus } from 'react-icons/fa'
 
 const about = () => {
     return(
-        <div className='flex flex-col container mx-auto mt-20 space-y-8'>
+        <div id='about' className='flex flex-col container mx-auto mt-20 space-y-8'>
             <div className="flex flex-col w-full container items-center justify-center">
                 <h3>Get to know</h3>
                 <h1 className='text-4xl text-blue-600 font-semibold'>Me</h1>
